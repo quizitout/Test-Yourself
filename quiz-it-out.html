@@ -1,0 +1,1966 @@
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&lt;!DOCTYPE html&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&lt;html lang="en"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&lt;head&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0; &lt;meta charset="UTF-8"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0; &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0; &lt;title&gt;Brain Quest - Grade 4 Adventure&lt;/title&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0; &lt;style&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; :root {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; --primary: #4a6bff;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; --secondary: #ff6b6b;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; --accent: #6bff8d;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; --light: #f5f7ff;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; --dark: #333344;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; --success: #4caf50;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; --warning: #ff9800;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; --danger: #f44336;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; * {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; box-sizing: border-box;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin: 0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; padding: 0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; body {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: linear-gradient(135deg, #6e8efb, #a777e3);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; min-height: 100vh;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; color: var(--dark);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; overflow-x: hidden;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .app-container {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; max-width: 500px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin: 0 auto;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: white;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; min-height: 100vh;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; position: relative;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .screen {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; display: none;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; padding: 20px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; min-height: 100vh;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .active {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; display: block;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; /* Header Styles */
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .app-header {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: var(--primary);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; color: white;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; padding: 15px 20px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; display: flex;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; justify-content: space-between;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; align-items: center;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .app-title {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-size: 1.5rem;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-weight: bold;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .user-info {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; display: flex;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; align-items: center;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; gap: 10px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .avatar {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; width: 40px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; height: 40px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border-radius: 50%;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: var(--accent);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; display: flex;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; align-items: center;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; justify-content: center;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-weight: bold;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; color: var(--dark);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; /* Button Styles */
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .btn {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: var(--primary);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; color: white;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border: none;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; padding: 12px 20px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border-radius: 50px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-size: 1rem;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; cursor: pointer;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; transition: all 0.3s;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-weight: 600;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; text-align: center;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; display: block;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; width: 100%;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin: 10px 0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .btn:hover {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; transform: translateY(-2px);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; box-shadow: 0 6px 0 rgba(0, 0, 0, 0.1);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .btn:active {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; transform: translateY(1px);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .btn-secondary {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: var(--secondary);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .btn-accent {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: var(--accent);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; color: var(--dark);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .btn-small {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; padding: 8px 15px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-size: 0.9rem;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; width: auto;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; display: inline-block;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin: 5px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; /* Form Styles */
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .form-group {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-bottom: 20px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .form-label {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; display: block;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-bottom: 8px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-weight: 600;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .form-input {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; width: 100%;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; padding: 12px 15px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border: 2px solid #e0e0e0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border-radius: 10px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-size: 1rem;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; transition: border-color 0.3s;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .form-input:focus {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border-color: var(--primary);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; outline: none;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; /* Card Styles */
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .card {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: white;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border-radius: 15px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; padding: 20px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-bottom: 20px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border: 1px solid #f0f0f0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .card-title {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-size: 1.2rem;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-bottom: 15px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; color: var(--primary);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-weight: 600;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; /* Login Screen */
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .login-container {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; display: flex;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; flex-direction: column;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; justify-content: center;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; min-height: 80vh;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; padding: 20px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .login-logo {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; text-align: center;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-bottom: 30px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .logo-icon {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-size: 4rem;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; color: var(--primary);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-bottom: 10px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .login-title {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-size: 2rem;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-weight: bold;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; color: var(--primary);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-bottom: 5px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .login-subtitle {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; color: #666;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-bottom: 30px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; /* Dashboard */
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .dashboard-stats {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; display: grid;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; grid-template-columns: 1fr 1fr;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; gap: 15px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-bottom: 20px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .stat-card {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: var(--light);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border-radius: 15px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; padding: 15px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; text-align: center;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .stat-value {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-size: 1.8rem;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-weight: bold;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; color: var(--primary);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .stat-label {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-size: 0.9rem;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; color: #666;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .subject-grid {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; display: grid;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; grid-template-columns: 1fr 1fr;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; gap: 15px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-bottom: 20px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .subject-card {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: var(--light);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border-radius: 15px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; padding: 20px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; text-align: center;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; transition: all 0.3s;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; cursor: pointer;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .subject-card:hover {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; transform: translateY(-5px);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .subject-icon {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-size: 2.5rem;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-bottom: 10px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .subject-name {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-weight: 600;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-bottom: 5px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .subject-progress {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; height: 5px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: #e0e0e0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border-radius: 5px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; overflow: hidden;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-top: 10px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .progress-bar {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; height: 100%;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: var(--primary);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border-radius: 5px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; /* Quiz Screen */
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .quiz-header {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; display: flex;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; justify-content: space-between;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; align-items: center;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-bottom: 20px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .quiz-progress {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; height: 8px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: #e0e0e0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border-radius: 5px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; overflow: hidden;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-bottom: 20px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .quiz-progress-bar {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; height: 100%;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: var(--primary);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border-radius: 5px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; transition: width 0.5s;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .question-container {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-bottom: 20px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .question-text {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-size: 1.3rem;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-bottom: 20px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; line-height: 1.4;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .options-container {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; display: flex;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; flex-direction: column;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; gap: 10px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .option {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: var(--light);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border: 2px solid #e0e0e0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border-radius: 10px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; padding: 15px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; cursor: pointer;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; transition: all 0.2s;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .option:hover {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border-color: var(--primary);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .option.selected {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border-color: var(--primary);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: rgba(74, 107, 255, 0.1);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .option.correct {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border-color: var(--success);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: rgba(76, 175, 80, 0.1);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .option.incorrect {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border-color: var(--danger);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: rgba(244, 67, 54, 0.1);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .feedback-container {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-top: 20px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; padding: 15px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border-radius: 10px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: var(--light);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; display: none;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .feedback-container.show {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; display: block;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .feedback-title {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-weight: 600;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-bottom: 10px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .explanation {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-top: 10px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-style: italic;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; color: #666;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; /* Leaderboard */
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .leaderboard-list {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-top: 20px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .leaderboard-item {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; display: flex;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; align-items: center;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; padding: 15px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border-bottom: 1px solid #f0f0f0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .leaderboard-rank {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; width: 30px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; height: 30px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border-radius: 50%;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: var(--light);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; display: flex;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; align-items: center;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; justify-content: center;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-weight: bold;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-right: 15px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .leaderboard-rank.top {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: gold;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; color: var(--dark);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .leaderboard-user {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; flex-grow: 1;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .leaderboard-score {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-weight: bold;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; color: var(--primary);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; /* Profile */
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .profile-header {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; text-align: center;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-bottom: 20px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .profile-avatar {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; width: 80px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; height: 80px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border-radius: 50%;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: var(--accent);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; display: flex;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; align-items: center;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; justify-content: center;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-size: 2rem;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-weight: bold;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; color: var(--dark);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin: 0 auto 15px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .profile-name {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-size: 1.5rem;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-weight: bold;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-bottom: 5px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .profile-level {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; color: #666;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-bottom: 20px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .suggestions-list {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-top: 15px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .suggestion-item {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; padding: 10px 15px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: var(--light);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border-radius: 10px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-bottom: 10px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; display: flex;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; align-items: center;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .suggestion-icon {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-right: 10px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; color: var(--warning);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; /* Difficulty Selection */
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .difficulty-options {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; display: flex;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; flex-direction: column;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; gap: 10px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-top: 20px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .difficulty-option {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; padding: 15px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border: 2px solid #e0e0e0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border-radius: 10px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; cursor: pointer;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; transition: all 0.2s;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; text-align: center;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .difficulty-option:hover {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border-color: var(--primary);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .difficulty-option.selected {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border-color: var(--primary);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: rgba(74, 107, 255, 0.1);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; /* Results Screen */
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .results-container {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; text-align: center;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; padding: 20px 0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .results-icon {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-size: 4rem;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-bottom: 20px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .results-title {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-size: 1.8rem;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-bottom: 10px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .results-score {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-size: 3rem;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-weight: bold;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; color: var(--primary);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-bottom: 20px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .results-stats {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; display: grid;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; grid-template-columns: 1fr 1fr;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; gap: 15px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-bottom: 30px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .result-stat {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: var(--light);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border-radius: 15px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; padding: 15px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .result-stat-value {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-size: 1.5rem;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-weight: bold;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; color: var(--primary);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .result-stat-label {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-size: 0.9rem;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; color: #666;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; /* Navigation */
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .bottom-nav {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; position: fixed;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; bottom: 0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; left: 0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; right: 0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: white;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; display: flex;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; justify-content: space-around;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; padding: 10px 0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; max-width: 500px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin: 0 auto;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .nav-item {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; display: flex;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; flex-direction: column;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; align-items: center;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; color: #666;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; text-decoration: none;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-size: 0.8rem;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .nav-item.active {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; color: var(--primary);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .nav-icon {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-size: 1.5rem;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-bottom: 5px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; /* Animations */
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; @keyframes bounce {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 40% {transform: translateY(-10px);}
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 60% {transform: translateY(-5px);}
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .bounce {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; animation: bounce 1s;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; @keyframes fadeIn {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; from { opacity: 0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; to { opacity: 1; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .fade-in {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; animation: fadeIn 0.5s;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; /* Responsive */
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; @media (max-width: 500px) {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .app-container {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; max-width: 100%;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0; &lt;/style&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&lt;/head&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&lt;body&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0; &lt;div class="app-container"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;!-- Header --&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;header class="app-header"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="app-title"&gt;Brain Quest&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="user-info" id="user-info" style="display: none;"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="avatar" id="user-avatar"&gt;U&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;span id="username-display"&gt;User&lt;/span&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/header&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;!-- Login Screen --&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div id="login-screen" class="screen active"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="login-container"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="login-logo"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="logo-icon"&gt;<span style="font-family:'Apple Color Emoji'">🧠</span>&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;h1 class="login-title"&gt;Brain Quest&lt;/h1&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;p class="login-subtitle"&gt;Grade 4 Learning Adventure&lt;/p&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="card"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;h2 class="card-title"&gt;Login to Your Account&lt;/h2&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="form-group"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;label class="form-label" for="username"&gt;Username&lt;/label&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;input type="text" id="username" class="form-input" placeholder="Enter your username"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="form-group"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;label class="form-label" for="password"&gt;Password&lt;/label&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;input type="password" id="password" class="form-input" placeholder="Enter your password"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;button class="btn" id="login-btn"&gt;Login&lt;/button&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;p style="text-align: center; margin-top: 15px; color: #666;"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; Don't have an account? &lt;a href="#" id="register-link" style="color: var(--primary);"&gt;Register here&lt;/a&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/p&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="card"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;h2 class="card-title"&gt;Quick Play&lt;/h2&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;p style="margin-bottom: 15px; color: #666;"&gt;Try the app without an account&lt;/p&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;button class="btn btn-secondary" id="guest-login"&gt;Play as Guest&lt;/button&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;!-- Dashboard Screen --&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div id="dashboard-screen" class="screen"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="dashboard-stats"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="stat-card"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="stat-value" id="total-score"&gt;0&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="stat-label"&gt;Total Score&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="stat-card"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="stat-value" id="user-level"&gt;1&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="stat-label"&gt;Level&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="card"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;h2 class="card-title"&gt;Subjects&lt;/h2&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="subject-grid"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="subject-card" data-subject="math"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="subject-icon"&gt;<span style="font-family:'Apple Color Emoji'">➗</span>&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="subject-name"&gt;Math&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="subject-progress"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="progress-bar" style="width: 60%"&gt;&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="subject-card" data-sub
+			</p>
+			<p style="margin-top:0pt; margin-bottom:0pt">
+				&#xa0;
+			</p>
+	<p style="bottom: 10px; right: 10px; position: absolute;"><a href="https://wordtohtml.net/?utm_source=wth_free_doc_conversion_link&utm_medium=external" target="_blank" style="font-size:11px; color: #d0d0d0">Converted to HTML with WordToHTML.net</a><span style="font-size:11px; color: #d0d0d0"> | </span><a href="https://documentconverter.pro/?utm_source=wth_free_doc_conversion_link&utm_medium=external" target="_blank" style="font-size:11px; color: #d0d0d0">Document Converter for Windows</a></p>
